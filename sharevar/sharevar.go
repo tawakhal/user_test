@@ -1,8 +1,8 @@
 package sharevar
 
 import (
-	"github.com/tawakhal/util/log"
+	"github.com/tawakhal/util/logging"
 )
 
 // Logger is global variable for logging
-var Logger log.Logger
+var Logger logging.Logger
