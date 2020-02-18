@@ -1,0 +1,16 @@
+
+server: 
+    port: 7777
+
+database:
+    dbtype: mysql
+    user: root
+    password: root
+    host: 127.0.0.1
+    port: 3306
+    dbname: user_test
+
+logger:
+    level: debug
+    pretty: true
+    color: true
