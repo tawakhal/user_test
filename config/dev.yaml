@@ -1,6 +1,7 @@
 
 server: 
-    port: 7777
+    grpcPort: 8071
+    httpPort: 8072
 
 database:
     dbtype: mysql
@@ -9,8 +10,3 @@ database:
     host: 127.0.0.1
     port: 3306
     dbname: user_test
-
-logger:
-    level: debug
-    pretty: true
-    color: true

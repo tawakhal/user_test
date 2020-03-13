@@ -1,16 +1,16 @@
 package main
 
 import (
+	slog "github.com/tawakhal/user_test/extend/logger"
 	shv "github.com/tawakhal/user_test/sharevar"
-	"github.com/tawakhal/util/logging"
 )
 
 func main() {
 	// Create Logging
-	shv.Logger = logging.NewLogger(logging.Option{
-		LogLevel: logging.LevelALL,
-		Format:   logging.FormatFMT,
-		Ouput:    logging.Console,
+	shv.Logger = slog.NewLogger(slog.Option{
+		LogLevel: slog.LevelALL,
+		Format:   slog.FormatFMT,
+		Ouput:    slog.Console,
 	})
 	shv.Logger.Info("Server Started")
 }

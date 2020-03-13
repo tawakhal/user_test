@@ -28,3 +28,24 @@ func (et Status) String() string {
 		return fmt.Sprintf(notFoundInt32, et)
 	}
 }
+
+// Int32 is convert from type to int32
+func (et ErrCode) Int32() int32 {
+	return int32(et)
+}
+
+// String is convert to string message
+func (et ErrCode) String() string {
+	switch et {
+	case ErrCodeDatabase:
+		return "Database Error"
+	case ErrCodeDepedency:
+		return "Depedency Error"
+	case ErrCodeRedis:
+		return "Redis Error"
+	case ErrCodeLibrary:
+		return "Library Error"
+	default:
+		return fmt.Sprintf(notFoundInt32, et)
+	}
+}
